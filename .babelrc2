@@ -1,0 +1,41 @@
+{
+  "comments": false,
+  "env": {
+    "testing-unit": {
+      "presets": [
+        "es2017",
+        "stage-3"
+      ],
+      "plugins": [
+        "istanbul"
+      ]
+    },
+    "testing-e2e": {
+      "presets": [
+        "es2017",
+        "stage-3"
+      ]
+    },
+    "main": {
+      "presets": [
+        "es2017",
+        "stage-3"
+      ]
+    },
+    "renderer": {
+      "presets": [
+        [
+          "es2017",
+          {
+            "modules": false
+          }
+        ],
+        "stage-3"
+      ]
+    }
+  },
+  "plugins": [
+    "transform-runtime",
+    "transform-async-to-generator"
+  ]
+}
